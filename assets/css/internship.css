@@ -1,0 +1,400 @@
+/*=============== INTERNSHIP PAGE ===============*/
+
+.internship{
+    padding-block: 7rem 3rem;
+}
+
+.internship__header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1.5rem;
+    margin-bottom:2rem;
+    text-align:center;
+}
+
+.internship__logo{
+    width:90px;
+}
+
+.internship__company{
+    font-size:var(--h1-font-size);
+    color:var(--first-color);
+}
+
+.internship__location{
+    color:var(--text-color);
+    font-size:var(--small-font-size);
+}
+
+/*=============== DETAILS ===============*/
+
+.internship__details{
+    display:grid;
+    gap:2rem;
+    margin-top:2rem;
+}
+
+.details__card{
+    background:var(--container-color);
+    padding:2rem;
+    border-radius:1rem;
+    border:2px solid transparent;
+    transition:.4s;
+}
+
+.details__card:hover{
+    border-color:var(--first-color);
+    transform:translateY(-6px);
+}
+
+.details__title{
+    font-size:var(--h3-font-size);
+    color:var(--first-color);
+    margin-bottom:1rem;
+}
+
+.details__content p{
+    margin-bottom:.75rem;
+    color:var(--text-color);
+}
+
+.details__profile{
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+}
+
+.details__profile img{
+    width:110px;
+    border-radius:50%;
+    border:3px solid var(--first-color);
+}
+
+/*=============== EXPERIENCE ===============*/
+
+.experience{
+    margin-top:5rem;
+}
+
+.experience__title{
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.experience__description{
+    text-align:justify;
+    line-height:1.8;
+    color:var(--text-color);
+}
+
+.experience__list{
+    margin-top:2rem;
+    display:grid;
+    gap:1rem;
+}
+
+.experience__item{
+    display:flex;
+    gap:1rem;
+    align-items:flex-start;
+    background:var(--container-color);
+    padding:1rem 1.5rem;
+    border-radius:.75rem;
+    transition:.3s;
+}
+
+.experience__item:hover{
+    transform:translateX(8px);
+    border-left:4px solid var(--first-color);
+}
+
+.experience__icon{
+    color:var(--first-color);
+    font-size:1.3rem;
+}
+
+/*=============== SKILLS ===============*/
+
+.internship__skills{
+    margin-top:4rem;
+}
+
+.skills__grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:1rem;
+}
+
+.skill__card{
+    background:var(--container-color);
+    padding:1.5rem;
+    text-align:center;
+    border-radius:1rem;
+    transition:.4s;
+}
+
+.skill__card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 20px hsla(var(--hue),80%,48%,.15);
+}
+
+.skill__card i{
+    font-size:2rem;
+    color:var(--first-color);
+    margin-bottom:.75rem;
+}
+
+/*=============== CERTIFICATE ===============*/
+
+.certificate{
+   margin-top:5rem;
+}
+
+.certificate__container{
+   display:grid;
+   grid-template-columns:1fr;
+   gap:2rem;
+   align-items:center;
+}
+
+.certificate__content{
+   text-align:justify;
+}
+
+.certificate__title{
+   font-size:var(--h2-font-size);
+   color:var(--first-color);
+   margin-bottom:1rem;
+}
+
+.certificate__description{
+   color:var(--text-color);
+   line-height:1.8;
+   margin-bottom:2rem;
+}
+
+.certificate__image{
+   text-align:center;
+}
+
+.certificate__image img{
+   width:100%;
+   max-width:750px;
+   border-radius:1rem;
+   border:3px solid var(--first-color);
+   box-shadow:0 10px 25px hsla(var(--hue),80%,48%,.15);
+   transition:.4s;
+}
+
+.certificate__image img:hover{
+   transform:scale(1.03);
+}
+
+.certificate__buttons{
+   display:flex;
+   justify-content:center;
+   gap:1rem;
+   flex-wrap:wrap;
+   margin-top:2rem;
+}
+
+/*=============== GALLERY ===============*/
+
+.gallery{
+   margin-top:5rem;
+}
+
+.gallery__container{
+   display:grid;
+   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+   gap:1.5rem;
+}
+
+.gallery__card{
+   overflow:hidden;
+   border-radius:1rem;
+   background:var(--container-color);
+}
+
+.gallery__card img{
+   width:100%;
+   display:block;
+   transition:.4s;
+}
+
+.gallery__card:hover img{
+   transform:scale(1.08);
+}
+
+/*=============== CONCLUSION ===============*/
+
+.conclusion{
+   margin-top:5rem;
+}
+
+.conclusion__container{
+   background:var(--container-color);
+   padding:2.5rem;
+   border-radius:1rem;
+   text-align:center;
+}
+
+.conclusion__title{
+   color:var(--first-color);
+   margin-bottom:1rem;
+}
+
+.conclusion__description{
+   line-height:1.8;
+   color:var(--text-color);
+   margin-bottom:2rem;
+}
+
+.conclusion__buttons{
+   display:flex;
+   justify-content:center;
+   gap:1rem;
+   flex-wrap:wrap;
+}
+
+/*=============== TIMELINE ===============*/
+
+.timeline{
+   margin-top:5rem;
+}
+
+.timeline__container{
+   display:grid;
+   gap:1.5rem;
+}
+
+.timeline__item{
+   background:var(--container-color);
+   padding:1.5rem;
+   border-left:5px solid var(--first-color);
+   border-radius:.75rem;
+   transition:.3s;
+}
+
+.timeline__item:hover{
+   transform:translateX(10px);
+}
+
+.timeline__date{
+   color:var(--first-color);
+   font-weight:600;
+   margin-bottom:.5rem;
+}
+
+.timeline__text{
+   color:var(--text-color);
+   line-height:1.6;
+}
+
+/*=============== RESPONSIVE ===============*/
+
+@media screen and (min-width:768px){
+
+    .internship__details{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .certificate__container{
+        grid-template-columns:1fr 1fr;
+        align-items:center;
+    }
+
+    .gallery__container{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .timeline__container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .conclusion__buttons{
+        justify-content:center;
+    }
+
+}
+
+@media screen and (min-width:1150px){
+
+    .internship{
+        padding-top:8rem;
+    }
+
+    .internship__header{
+        gap:2rem;
+    }
+
+    .internship__logo{
+        width:120px;
+    }
+
+    .internship__company{
+        font-size:2.5rem;
+    }
+
+    .details__card{
+        padding:2.5rem;
+    }
+
+    .certificate__image img{
+        max-width:850px;
+    }
+
+}
+
+/*=============== SMOOTH EFFECTS ===============*/
+
+.details__card,
+.skill__card,
+.gallery__card,
+.timeline__item,
+.certificate__image img{
+    transition:all .35s ease;
+}
+
+.details__card:hover,
+.skill__card:hover{
+    box-shadow:0 12px 30px hsla(var(--hue),80%,48%,.18);
+}
+
+.button{
+    transition:.35s;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+}
+
+/*=============== ACTIVE SECTION ===============*/
+
+section{
+    scroll-margin-top:7rem;
+}
+
+/*=============== IMAGE STYLE ===============*/
+
+.gallery__card img,
+.certificate__image img{
+    object-fit:cover;
+}
+
+/*=============== CUSTOM SCROLLBAR ===============*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--first-color);
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:var(--container-color);
+}
+

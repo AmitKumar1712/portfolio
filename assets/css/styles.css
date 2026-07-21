@@ -495,7 +495,7 @@ img {
 }
 
 /*=============== RESUME ===============*/
-.resume__container{
+/* .resume__container{
   row-gap: 4rem;
 }
 
@@ -538,6 +538,82 @@ img {
 
 .resume__info address{
   font-style: initial;
+} */
+
+/*=============== EXPERIENCE ===============*/
+
+.experience__container{
+    display:grid;
+    gap:2rem;
+}
+
+.experience__card{
+    background:var(--container-color);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    transition:.4s;
+}
+
+.experience__card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 30px hsla(var(--hue),80%,48%,.25);
+}
+
+.experience__img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+}
+
+.experience__content{
+    padding:1.5rem;
+    text-align:center;
+}
+
+.experience__title{
+    font-size:1.7rem;
+    color:var(--first-color);
+    margin-bottom:1rem;
+}
+
+.experience__button{
+    width:180px;
+}
+
+/* .experience__img{
+    transition:.4s;
+}
+
+.experience__card:hover .experience__img{
+    transform:scale(1.08);
+} */
+
+/* Tablet */
+
+@media screen and (min-width:768px){
+
+.experience__container{
+    grid-template-columns:repeat(3,380px);
+    justify-content:center;
+}
+
+}
+
+/* Desktop */
+
+@media screen and (min-width:1150px){
+
+.experience__container{
+    grid-template-columns:repeat(3,420px);
+    gap:3rem;
+}
+
+.experience__img{
+    height:300px;
+}
+
 }
 
 /*=============== CONTACT ===============*/
