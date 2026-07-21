@@ -465,11 +465,10 @@ img {
 }
 
 .projects__data .button{
-  justify-self: center;
+  /* justify-self: center; */
   background-color: hsla(var(--hue), 8%, 8%, .4);
-  margin-top: .5rem;
+  /* margin-top: .5rem; */
 }
-
 
 .projects__card:hover{
   box-shadow: 0 8px 16px hsla(var(--hue), 80%, 48%, .2);
@@ -480,6 +479,20 @@ img {
   pointer-events: initial;
 }
 
+/* ==========use for button side by side align======== */
+.projects__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    margin-top: .75rem;
+}
+
+.projects__buttons .button{
+    margin-top: 0;
+    padding: .55rem .9rem;
+    white-space: nowrap;
+}
 
 /*=============== RESUME ===============*/
 .resume__container{
